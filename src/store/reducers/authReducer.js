@@ -6,6 +6,10 @@ const authReducer = (state = iniState, action) => {
       console.log("From Reducer", action.cred);
       return state;
     }
+    case "SIGIN_ERR": {
+      console.log("From Reducer", action.err);
+      return state;
+    }
 
     default: {
       return state;
